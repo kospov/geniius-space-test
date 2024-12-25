@@ -1,0 +1,21 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.useTabs": false,
+  "emmet.triggerExpansionOnTab": false,
+  "editor.stickyTabStops": false,
+  "editor.useTabStops": false,
+  "editor.fontFamily": "comic shanns",
+  "editor.minimap.maxColumn": 80,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "avoid",
+  "prettier.proseWrap": "always",
+  "files.autoSave": "onFocusChange",
+  "prettier.jsxSingleQuote": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}

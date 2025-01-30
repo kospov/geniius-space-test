@@ -1,0 +1,82 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (mon-width: $bp-tablet) {
+      align-items: center;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__logo-icon {
+    width: 72px;
+    height: 38px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--primary-color-light);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 114px;
+      height: 56px;
+    }
+
+    &:hover {
+      fill: var(--primary-color-accent);
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 64px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--primary-color-light);
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+
+    &:hover {
+      fill: var(--primary-color-accent);
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.chiefs-section {
+  &__title {
+    position: relative;
+    margin: 0 auto 24px;
+    white-space: collapse;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 80px;
+    }
+
+    &::before,
+    &::after {
+      display: none;
+      content: '';
+      position: absolute;
+      bottom: 23px;
+      width: calc((100% - 560px) / 2);
+      height: 0px;
+
+      border: 2px solid var(--secondary-color-light);
+      @media screen and (min-width: $bp-tablet) {
+        display: block;
+      }
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 40px 30px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $bp-tablet) {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  padding: 128px;
+  border-radius: 32px;
+  background-color: var(--primary-color-light);
+  overflow-y: auto;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 190px;
+    height: 232px;
+    background-repeat: no-repeat;
+    background-image: url(../images/decor-one-bread-modal.png);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__btn-close-icon {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    fill: var(--primary-color-dark);
+
+    &:hover {
+      fill: var(--primary-color-accent);
+    }
+  }
+
+  &__form-field {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 24px;
+  }
+}
